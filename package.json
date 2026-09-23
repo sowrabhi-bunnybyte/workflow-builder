@@ -1,0 +1,21 @@
+{
+  "name": "conversational-workflow-builder",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Digitomics AI Engineer Assignment — Intelligent Conversational Workflow Builder",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "dev": "concurrently -n SERVER,CLIENT -c green,cyan \"npm:dev:server\" \"npm:dev:client\"",
+    "build": "npm run build --prefix client",
+    "start": "npm run start --prefix server",
+    "test": "npm test --prefix server"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
