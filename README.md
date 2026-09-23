@@ -204,7 +204,7 @@ See `server/.env.example` for the authoritative list. Summary:
 |---|---|---|
 | `LLM_PROVIDER` | `groq` | `groq` \| `gemini`. Irrelevant if no key is set — falls back to offline mode. |
 | `GROQ_API_KEY` | *(empty)* | From console.groq.com — free. |
-| `GROQ_MODEL` | `llama-3.3-70b-versatile` | Free-tier Groq model. |
+| `GROQ_MODEL` | `openai/gpt-oss-20b` | Free-tier Groq model. |
 | `GEMINI_API_KEY` | *(empty)* | From aistudio.google.com — free. |
 | `GEMINI_MODEL` | `gemini-2.0-flash` | Free-tier Gemini model. |
 | `LLM_TIMEOUT_MS` | `15000` | Falls back to rule-based engine if exceeded. |
